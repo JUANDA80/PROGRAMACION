@@ -1,0 +1,10 @@
+disp("Vamos a dividir y potenciar estos números")
+
+num1=input("Dame el primer número: ");
+num2=input("Dame el segundo número: ");
+
+disp("El resutado de la division es: ")
+div=num1/num2
+
+disp("El resultado de la potencia es: ")
+pot=num1^num2
