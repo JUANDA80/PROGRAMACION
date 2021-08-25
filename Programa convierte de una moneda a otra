@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main () 
+{
+	float E,MXN;
+	printf("Dame la cantidad de pesos: \n");
+	scanf ("%f",&MXN);
+	
+	E=(MXN)/(23.34);
+	printf("La cantidad de euros es:%f", E);
+	return 0;
+}          
