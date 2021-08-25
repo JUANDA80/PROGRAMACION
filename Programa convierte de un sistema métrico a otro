@@ -1,0 +1,14 @@
+ 
+#include <stdio.h>
+#include <math.h>
+
+int main () 
+{
+	float yd,m;
+	printf ("Dame la cantidad de metros: \n");
+	scanf ("%f", &m);
+	
+	yd =(m)*(0.9144);
+	printf ("La cantidad de yardas es:%f", yd);
+	return 0;
+}     
