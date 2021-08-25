@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+	float r,h,v;
+	
+	printf("Dame el valor del radio: \n");
+	scanf("%f",&r);
+	printf("Dame el valor de la altura: \n");
+	scanf("%f",&h);
+
+	v=3.1416*(r)*(r)*(h);
+	printf("El volumen de un cilindro es:%f \n",v);
+	return 0;
+}
