@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(void){
+	int num1,num2,resta;
+	
+	int d;
+	printf("Introduzca el primer numero: \n");
+	scanf("%d",&num1);
+	printf("Introduzca el segundo numero: \n");
+	scanf("%d",&num2);
+	
+	if (num1>num2)
+	resta=num1-num2;
+	else
+	resta=num2-num1;
+	
+	printf("El resultado de la resta es:%d",resta);
+	return 0;
+}
