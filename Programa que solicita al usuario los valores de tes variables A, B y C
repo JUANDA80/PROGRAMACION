@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <math.h>
+
+int main () 
+{
+	int A,B,C;
+	printf("Introduzca el valor de A: \n");
+	scanf("%d",&A);
+	printf("Introduzca el valor de B: \n");
+	scanf("%d",&B);
+	printf("Introduzca el valor de C: \n");
+	scanf("%d",&C);
+{
+	if (A > 3)
+	   printf ("A es mayor que 3 \n");
+	else 
+       printf ("A es menor que 3 \n");
+}
+{
+	if (A > C)
+	   printf ("A es mayor que C \n");
+	else 
+       printf ("A es menor que C \n");
+}
+{
+	if (B != C)
+	   printf ("B es diferente a C \n");
+	else 
+       printf ("B no es diferente a C \n");
+}   
+{
+	if (A == 3)
+	   printf ("A es igual a 3 \n");
+	else 
+       printf ("A no es igual a 3 \n");
+}  
+{
+	if (A * B == 15)
+	   printf ("El producto de A por B es igual a 15 \n");
+	else 
+       printf ("El producto de A por B es no igual a 15 \n");
+}     
+{
+	if (C / B < A)
+	   printf ("El cociente de C entre B es menor que A \n");
+	else 
+       printf ("El cociente de C entre B es mayor que A \n");
+}  
+{
+	if (C / B == -10)
+	   printf ("El cociente de C entre B es igual a -10 \n");
+	else 
+       printf ("El cociente de C entre B es no igual a -10 \n");
+}  
+{
+	if (A + B + C == 5)
+	   printf ("La suma de A,B y C es igual a 5 \n");
+	else 
+       printf ("La suma de A,B y C no es igual a 5 \n");
+}  
+	return 0;
+}
