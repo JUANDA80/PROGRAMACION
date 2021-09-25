@@ -1,0 +1,90 @@
+#include<stdio.h>
+int main(void){
+	int n, op, bin[999], oct[999], hex[999];
+	int i=0;
+	char salir;
+	while (salir!='n'&&salir!='N'){
+	printf("Introduzca el numero decimal a convertir: \n");
+	scanf("%d",&n);
+	
+	printf("Indica a que sistema lo quieres convertir:\n 1.Binario 2.Octal 3.Hexadecimal\n");
+	scanf("%d", &op);
+	
+	switch(op)
+	{
+	case 1:	
+	while (n!=0)
+		{
+			bin[i]=n%2;
+			n=n/2;
+			i++;
+		}
+		i--;
+		printf("El numero en binario es: ");
+	while (i>=0)
+		{
+			printf("%i",bin[i]);
+			i--;
+		}
+		break;
+	case 2:
+	while (n!=0)
+		{
+			oct[i]=n%8;
+			n=n/8;
+			i++;
+		}
+		i--;
+		printf("El numero en octal es: ");
+	while (i>=0)
+		{
+			printf("%i",oct[i]);
+			i--;
+		}
+		break;
+	case 3:
+	while (n!=0)
+		{
+			hex[i]=n%16;
+			n=n/16;
+			i++;
+		}
+		i--;
+		printf("El numero en hexadecimal es: ");
+	while (i>=0)
+		{
+		switch(hex[i])
+		{
+        case 10:
+        printf("A");
+        break;
+        case 11:
+        printf("B");
+        break;
+        case 12:
+        printf("C");
+        break;
+        case 13:
+        printf("D");
+        break;
+        case 14:
+        printf("E");
+        break;
+        case 15:
+        printf("F");
+        break;
+        default:
+        printf("%i",hex[i]); 
+        break;
+           } 
+           i--;
+     }
+     printf("\n");
+	break;
+}
+	printf("\n Quiere hacer el calculo para otro numero S/N: \n");
+	scanf("%s",&salir);
+    }
+printf("Gracias por utilizar nuestra calculadora \n");
+return 0;
+}
