@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main (){
+	float cateto1, cateto2, hipotenusa,area, perimetro;
+	printf("Cateto 1: ");
+	scanf("%f", &cateto1);
+	printf("Cateto 2: ");
+	scanf("%f", &cateto2);
+	hipotenusa=sqrt(cateto1*cateto1+cateto2*cateto2);
+	area=(cateto1*cateto2)/2.0;
+	perimetro=cateto1+cateto2+hipotenusa;
+	printf("La hipotenusa es %.2f\n", hipotenusa);
+	printf("El area es %.2f\n", area);
+	printf("El perimetro es %.2f\n", perimetro);
+	return 0;
+}
