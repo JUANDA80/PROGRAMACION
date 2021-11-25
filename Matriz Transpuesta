@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+int main(){
+	
+	int m,n;
+	int i,j;
+	
+	printf("Introduzca el numero de filas: ");
+	scanf("%d", &m);
+	printf("Introduzca el numero de columnas: ");
+	scanf("%d", &n);
+	if (m<=50 && n<=50){
+	int matriz[m][n];
+	
+	for (i=1; i<=m; i++)
+		for (j=1; j<=n; j++){
+		printf("Digite un numero %d, %d: ",i,j);
+		scanf("%d", &matriz[i][j]);
+	}
+	
+	printf("Matriz original \n\n");
+	for (i=1; i<=m; i++){
+		for (j=1; j<=n; j++){
+		printf("%d  ", matriz[i][j]);
+		}
+		printf("\n");
+	}
+	
+		printf("Matriz transpuesta \n\n");
+	for (i=1; i<=n; i++){
+		for (j=1; j<=m; j++){
+		printf("%d  ", matriz[j][i]);
+    }
+		printf("\n");
+	}
+	}
+	else {
+	printf("Error\nUsted a ingresado un valor superior a 50");
+	}
+	getch();
+	return 0;
+}
