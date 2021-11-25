@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+	int PRO[5][12];
+	int PRE[5];
+	int v[5]={0, 0, 0, 0, 0}, v2[5]={0, 0, 0, 0, 0};
+	int a,b,j,i;
+	
+	printf("Tienda de Materiales Electronicos\n");
+	printf(" 0.-Celulares\n 1.-Tablet´s\n 2.-SmartTV\n 3.-Laptops\n 4.-Airpods\n");
+	
+	for(i=0; i<5; i++){
+	for(j=0; j<12; j++){
+	printf("indica la cantidad vendida en el producto %d, mes %d: ",i,j);
+	scanf("%d",&PRO[i][j]);
+	}
+	printf("Indica el precio del producto: \n");
+	scanf("%d",&PRE[i]);
+	}
+	for(i=0; i<5; i++){
+	for(j=0; j<12; j++){
+		v[i]=v[i]+PRO[i][j];
+	}
+	v2[i]=v[i]*PRE[i];
+	}
+	
+	printf("El monto total anual de cada producto es de: \n");
+	for(i=0;i<=5;i++){
+	printf("%d. $ %d\n",i,v2[i]);}
+	
+	printf("Las ventas anuales de cada producto es de: \n");
+	for(i=0;i<5;i++){
+	printf("%d. %d piezas\n", i,v[i]);
+}
+for(i=0;i<5;i++){
+	for(j=0;j<5;j++){
+		if(v[i]>v[j]){
+			a=v[i];
+		}
+		if(v[i]<v[j]){
+			b=v[i];
+	}
+    }
+}
+printf("El producto con mayor ventas es %d\n", a);
+printf("El producto con menor ventas es %d\n", b);
+
+getch();
+return 0;
+}
